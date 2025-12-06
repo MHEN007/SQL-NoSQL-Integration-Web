@@ -1,0 +1,25 @@
+{
+  "name": "be-store",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts",
+    "migrate": "bun run drizzle-kit generate && bun run drizzle-kit migrate"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.4.0",
+    "@elysiajs/jwt": "^1.4.0",
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.44.7",
+    "elysia": "latest",
+    "mongodb": "^7.0.0",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.15.6",
+    "bun-types": "latest",
+    "drizzle-kit": "^0.31.7",
+    "tsx": "^4.20.6"
+  },
+  "module": "src/index.js"
+}
